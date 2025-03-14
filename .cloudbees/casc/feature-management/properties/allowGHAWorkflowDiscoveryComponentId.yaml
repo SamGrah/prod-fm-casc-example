@@ -1,0 +1,7 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-properties
+
+name: allowGHAWorkflowDiscoveryComponentId
+type: String
+description: "Allow GHA Workflow Discovery Component Id"

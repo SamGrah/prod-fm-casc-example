@@ -1,0 +1,7 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-properties
+
+name: allowGHAWorkflowDiscoveryOrgId
+type: String
+description: "Allow GHA Workflow Discovery Organization Id"
