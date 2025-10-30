@@ -13,6 +13,13 @@ defaultValue:
 
 conditions:
   - allOf:
+      - property:
+          name: app_release
+          operator: in-array
+          operands:
+            - testingMatch
+    flagValue: 0
+  - allOf:
       - anyOf:
           - group:
               name: valid_names
