@@ -1,0 +1,22 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: valid_names
+
+description: 
+
+conditions:
+  allOf:
+    - property:
+        name: app_release
+        operator: in-array
+        operands:
+            - asdf
+            - fda
+            - qwer
+            - rewq
+            - tyui
+            - iuty
+            - poiiu
+            - uiop
