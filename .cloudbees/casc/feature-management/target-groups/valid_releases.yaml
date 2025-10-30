@@ -1,0 +1,26 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: valid_releases
+
+description: 
+
+conditions:
+  allOf:
+    - property:
+        name: app_release
+        operator: in-array
+        operands:
+            - "123"
+            - "456"
+            - "789"
+            - "321"
+            - "654"
+            - "987"
+            - "147"
+            - "258"
+            - "369"
+            - "963"
+            - "852"
+            - "741"
