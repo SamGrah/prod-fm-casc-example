@@ -1,0 +1,23 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: TestingActualOrderOfEvents
+
+enabled: true
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: false
+
+conditions:
+  - allOf:
+      - anyOf:
+          - group:
+              name: valid_releases
+    flagValue: true
+  - allOf:
+      - anyOf:
+          - group:
+              name: valid_names
+    flagValue: true
