@@ -3,5 +3,5 @@ apiVersion: featuremanagement.cloudbees.io/v1alpha1
 kind: flag-properties
 
 name: app_release
-type: Semver
+type: String
 description: ""
