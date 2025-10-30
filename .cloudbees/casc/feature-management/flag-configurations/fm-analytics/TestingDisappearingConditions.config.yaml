@@ -13,16 +13,16 @@ defaultValue:
 
 conditions:
   - allOf:
-      - property:
-          name: app_release
-          operator: in-array
-          operands:
-            - newValue
-    flagValue: false
-  - allOf:
       - anyOf:
           - group:
               name: valid_names
           - group:
               name: valid_releases
+    flagValue: false
+  - allOf:
+      - property:
+          name: app_release
+          operator: in-array
+          operands:
+            - newValue
     flagValue: false
